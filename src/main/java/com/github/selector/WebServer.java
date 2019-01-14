@@ -14,6 +14,7 @@ import java.util.Set;
 public class WebServer {
 
     public static void main(String[] args) throws Exception{
+        //打开ServerSocketChannel
         ServerSocketChannel channel = ServerSocketChannel.open();
         channel.socket().bind(new InetSocketAddress("127.0.0.1",8888));
         channel.configureBlocking(false);
